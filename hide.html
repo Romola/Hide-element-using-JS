@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box1" id="removebutton">
+		<img src="http://images5.fanpop.com/image/photos/28500000/Tulips-tulips-28594078-500-313.jpg" alt="flower1_image" style="width: 250px; height: 200px;"><br/>
+		<input value="Remove" type="button" onclick="document.getElementById('removebutton').style.display='none'">
+	</div>
+	<div class="box2"  id="hidebutton">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqF3hG86z4Tk9z1-kK221o-I-cBOFar22OMTLILb33hyeVP8ev" style="width: 250px; height: 200px;"><br/>
+		<input type="button" value="Hide" onclick="document.getElementById('hidebutton').style.visibility='hidden'">
+	</div>
+	<div class="box3">
+		<img src="http://www.ie-wallpapers.com/data/out/123/37722132-images-flowers.jpg" style="width:250px; height: 200px;"><br/>
+<input type="reset" value="Reset" onclick="reset()">
+	</div>
+	<script>
+		function reset() {
+			document.getElementById('removebutton').style.display='block';
+			document.getElementById('hidebutton').style.visibility='visible';
+		}
+	</script>
+</body>
+</html>
